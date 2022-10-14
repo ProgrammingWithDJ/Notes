@@ -1,0 +1,14 @@
+Steps to add EF core and create database by code first.
+
+1. Add DbCOntext class in WEBAPI
+
+2. add services in Program.cs
+
+builder.Services.AddDbContext<DataContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+3. Migration Commands dotnet ef
+
+dotnet ef migrations add Initial
