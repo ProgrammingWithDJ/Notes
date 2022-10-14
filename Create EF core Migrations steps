@@ -14,3 +14,9 @@ builder.Services.AddDbContext<DataContext>(options =>
 dotnet ef migrations add Initial
 
 dotnet ef database update
+
+4. add a contructor to the Controller
+
+5. PAss Db context as a parameter initialize the field.
+
+
