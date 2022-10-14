@@ -12,3 +12,5 @@ builder.Services.AddDbContext<DataContext>(options =>
 3. Migration Commands dotnet ef
 
 dotnet ef migrations add Initial
+
+dotnet ef database update
